@@ -22,7 +22,7 @@ db.get("responding").then(value => {
 
 function updateReturn(returnMessage) {
   db.get("return").then(returns => {
-    encouragements.push([returns])
+    returns.push([returns])
     db.set("return", returns)
   })
 }
