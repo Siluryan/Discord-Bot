@@ -5,12 +5,8 @@ const Database = require("@replit/database")
 
 const db = new Database()
 const client = new Discord.Client()
-
 const Words = [""]
-
-const starterReturn = [
-  ""
-]
+const starterReturn = [""]
 
 db.get("return").then(returns => {
   if (!returns || returns.length < 1) {
