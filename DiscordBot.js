@@ -56,7 +56,7 @@ client.on("message", msg => {
 
   if (msg.content.startsWith("$list")) {
     db.get("return").then(returns => {
-      msg.channel.send(encouragements)
+      msg.channel.send(returns)
     })
   }
 
